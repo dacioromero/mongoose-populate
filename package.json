@@ -1,15 +1,19 @@
 {
   "name": "mongoose-populate",
   "version": "1.0.0",
-  "description": "",
+  "description": "Populate helper for Mongoose",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "/Users/dacioromero/Dev/Make School/BEW 1.2/mongoose-populate.git"
+    "url": "git+https://github.com/DacioRomero/mongoose-populate.git"
   },
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DacioRomero/mongoose-populate/issues"
+  },
+  "homepage": "https://github.com/DacioRomero/mongoose-populate#readme"
 }
