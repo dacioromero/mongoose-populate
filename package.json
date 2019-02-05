@@ -1,10 +1,10 @@
 {
   "name": "mongoose-populate",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Populate helper for Mongoose",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,13 @@
   "bugs": {
     "url": "https://github.com/DacioRomero/mongoose-populate/issues"
   },
-  "homepage": "https://github.com/DacioRomero/mongoose-populate#readme"
+  "homepage": "https://github.com/DacioRomero/mongoose-populate#readme",
+  "devDependencies": {
+    "eslint": "^5.13.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "lodash.bind": "^4.2.1",
+    "mocha": "^5.2.0",
+    "sinon": "^7.2.2"
+  }
 }
