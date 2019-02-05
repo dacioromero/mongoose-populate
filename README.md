@@ -29,7 +29,7 @@ const ExampleSchema = new Schema({
 //   next();
 // });
 
-+ ExampleSchema.pre('find', populate('exampleRef'));
+ExampleSchema.pre('find', populate('exampleRef'));
 
 module.exports = mongoose.model('Example', ExampleSchema);
 ```
