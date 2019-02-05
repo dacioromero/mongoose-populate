@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/DacioRomero/mongoose-populate.git"
   },
-  "author": "",
+  "author": "Dacio Romero <dacioromero@gmail.com> (dacio.app)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/DacioRomero/mongoose-populate/issues"
