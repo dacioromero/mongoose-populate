@@ -1,6 +1,6 @@
 {
   "name": "mongoose-populate",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Populate helper for Mongoose",
   "main": "index.js",
   "scripts": {
@@ -22,6 +22,7 @@
     "eslint-plugin-import": "^2.16.0",
     "lodash.bind": "^4.2.1",
     "mocha": "^5.2.0",
-    "sinon": "^7.2.2"
+    "sinon": "^7.2.2",
+    "sinon-test": "^2.4.0"
   }
 }

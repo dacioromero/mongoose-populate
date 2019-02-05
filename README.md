@@ -1,28 +1,35 @@
 # Mongoose Populate
 
-Populate helper for Mongoose
+Populate helper for Mongoose so you don't need to keep writing similar functions.
 
-# Install
+# Installation
+
 
 ```sh
-$ npm install github:DacioRomero/mongoose-populate
+$ npm install mongoose-populate
 ```
 
 # Usage
 
 ```js
 const mongoose = require('mongoose');
-const Populate = require('mongoose-populate');
+const populate = require('mongoose-populate');
 
-const Schema = mongoose.Schema;
+const { Schema } = mongoose;
 
 const ExampleSchema = new Schema({
     exampleRef: {
         type: Shema.Types.ObjectId,
-        ref: 'OtherModel'
-    }
+        ref: 'OtherModel',
+    },
 });
-ExampleSchema.pre('find', Populate('exampleRef'));
+
+// ExampleSchema.pre('find', function populateExample(next) {
+//   this.populate('exampleRef');
+//   next();
+// });
+
++ ExampleSchema.pre('find', populate('exampleRef'));
 
 module.exports = mongoose.model('Example', ExampleSchema);
 ```
