@@ -1,6 +1,6 @@
 {
   "name": "mongoose-populate",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Populate helper for Mongoose",
   "main": "dist/index.js",
   "scripts": {
