@@ -10,7 +10,7 @@ package-lock.json
 
 # Configuration files
 .babelrc
-.eslintrc
+.eslintrc.json
 .gitignore
 .gitlab-ci.yml
 .npmignore
