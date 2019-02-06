@@ -1,6 +1,11 @@
 # https://www.exclamationlabs.com/blog/continuous-deployment-to-npm-using-gitlab-ci/
 image: node:latest
 
+stages:
+  - test
+  - deploy
+
+# CACHING 
 before_script:
   - npm install
 
@@ -8,14 +13,18 @@ cache:
   paths:
     - node_modules/
 
+# TESTS
 test:node:latest:
-   script:
+  stage: test
+  script:
     - npm test
 
 test:lint:
+  stage: test
   script:
     - npm run lint
 
+# PUBLISH TO NPM
 publish:
   stage: deploy
   only:
