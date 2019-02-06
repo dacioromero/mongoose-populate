@@ -1,10 +1,10 @@
 {
   "name": "mongoose-populate",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Populate helper for Mongoose",
   "main": "dist/index.js",
   "scripts": {
-    "test": "mocha --require @babel/register" ,
+    "test": "mocha --require @babel/register",
     "build": "babel src --out-dir dist",
     "lint": "eslint src test"
   },
