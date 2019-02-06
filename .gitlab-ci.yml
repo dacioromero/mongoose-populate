@@ -1,22 +1,27 @@
 # https://www.exclamationlabs.com/blog/continuous-deployment-to-npm-using-gitlab-ci/
 image: node:latest
 
-before_script:  
+before_script:
   - npm install
 
-cache:  
+cache:
   paths:
     - node_modules/
 
-test:
+test:node:latest:
    script:
     - npm test
 
-publish:  
+test:lint:
+  script:
+    - npm run lint
+
+publish:
   stage: deploy
   only:
     - tags
     - triggers
   script:
+    - npm run build
     - echo '//registry.npmjs.org/:_authToken=${NPM_TOKEN}'>.npmrc
     - npm publish
