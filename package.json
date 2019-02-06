@@ -8,16 +8,13 @@
     "build": "babel src --out-dir dist",
     "lint": "eslint src test"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/DacioRomero/mongoose-populate.git"
-  },
+  "repository": "gitlab:dacioromero/mongoose-populate",
   "author": "Dacio Romero <dacioromero@gmail.com> (dacio.app)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/DacioRomero/mongoose-populate/issues"
+    "url": "https://gitlab.com/dacioromero/mongoose-populate/issues"
   },
-  "homepage": "https://github.com/DacioRomero/mongoose-populate#readme",
+  "homepage": "https://gitlab.com/dacioromero/mongoose-populate#readme",
   "devDependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.2.2",
