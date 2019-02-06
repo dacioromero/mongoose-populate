@@ -1,7 +1,7 @@
-const sinon = require('sinon');
-const sinonTest = require('sinon-test');
-const bind = require('lodash.bind');
-const populate = require('../src');
+import sinon from 'sinon';
+import sinonTest from 'sinon-test';
+import bind from 'lodash.bind';
+import populate from '../src';
 
 const test = sinonTest(sinon);
 
