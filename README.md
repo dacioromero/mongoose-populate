@@ -45,7 +45,7 @@ const { Schema } = mongoose;
 
 const ExampleSchema = new Schema({
     exampleRef: {
-        type: Shema.Types.ObjectId,
+        type: Schema.Types.ObjectId,
         ref: 'OtherModel',
     },
 });
