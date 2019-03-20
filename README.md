@@ -1,6 +1,6 @@
 # Mongoose Populate
 
-Populate helper for Mongoose so you don't need to keep writing similar functions.
+Populate helper for Mongoose so you don't need to keep rewriting `this.populate` and `next`.
 
 # Installation
 
@@ -10,52 +10,42 @@ $ npm install mongoose-populate
 
 # Usage
 
-## CommonJS
+## Importing
+
+### CommonJS
 
 ```js
-const mongoose = require('mongoose');
-const populate = require('mongoose-populate').default;
-
-const { Schema } = mongoose;
-
-const ExampleSchema = new Schema({
-    exampleRef: {
-        type: Shema.Types.ObjectId,
-        ref: 'OtherModel',
-    },
-});
-
-// ExampleSchema.pre('find', function populateExample(next) {
-//   this.populate('exampleRef');
-//   next();
-// });
-
-ExampleSchema.pre('find', populate('exampleRef'));
-
-module.exports = mongoose.model('Example', ExampleSchema);
+const populate = require('mongoose-populate');
 ```
 
-## ES6
+### ES6
 
 ```js
-import mongoose from 'mongoose';
 import populate from 'mongoose-populate';
+```
 
+## Example
+
+### Model
+
+```js
 const { Schema } = mongoose;
 
 const ExampleSchema = new Schema({
-    exampleRef: {
-        type: Shema.Types.ObjectId,
+    exampleField: {
+        type: Schema.Types.ObjectId,
         ref: 'OtherModel',
     },
 });
+```
 
-// ExampleSchema.pre('find', function populateExample(next) {
-//   this.populate('exampleRef');
-//   next();
-// });
+### Hook replacement
 
-ExampleSchema.pre('find', populate('exampleRef'));
+```diff
+- ExampleSchema.pre('find', function popExampleField(next) {
+-   this.populate('exampleField');
+-   next();
+- });
 
-export default mongoose.model('Example', ExampleSchema);
++ ExampleSchema.pre('find', populate('exampleField'));
 ```
