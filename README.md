@@ -1,5 +1,9 @@
 # Mongoose Populate
 
+[![pipeline status](https://gitlab.com/dacio/mongoose-populate/badges/master/pipeline.svg)](https://gitlab.com/dacio/mongoose-populate/commits/master)
+[![coverage report](https://gitlab.com/dacio/mongoose-populate/badges/master/coverage.svg)](https://gitlab.com/dacio/mongoose-populate/commits/master)
+
+
 Populate helper for Mongoose so you don't need to keep rewriting `this.populate` and `next`.
 
 # Installation
