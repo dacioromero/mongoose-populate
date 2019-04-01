@@ -4,28 +4,28 @@
   "description": "Populate helper for Mongoose",
   "main": "dist/index.js",
   "scripts": {
-    "test": "mocha --require @babel/register",
+    "test": "jest --coverage",
     "build": "babel src --out-dir dist",
     "lint": "eslint src test"
   },
   "repository": "gitlab:dacioromero/mongoose-populate",
-  "author": "Dacio Romero <dacioromero@gmail.com> (dacio.app)",
+  "author": "Dacio Romero <dacioromero@gmail.com> (dacio.dev)",
   "license": "MIT",
   "bugs": {
     "url": "https://gitlab.com/dacioromero/mongoose-populate/issues"
   },
   "homepage": "https://gitlab.com/dacioromero/mongoose-populate#readme",
   "devDependencies": {
-    "@babel/cli": "^7.2.3",
     "@babel/core": "^7.4.0",
-    "@babel/preset-env": "^7.4.1",
+    "@babel/preset-env": "^7.4.2",
     "@babel/register": "^7.4.0",
     "babel-plugin-add-module-exports": "^1.0.0",
-    "eslint": "^5.15.3",
+    "eslint": "^5.16.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.16.0",
-    "mocha": "^5.2.0",
-    "sinon": "^7.3.0"
+    "jest": "^24.5.0"
   },
-  "dependencies": {}
+  "files": [
+    "dist/"
+  ]
 }
