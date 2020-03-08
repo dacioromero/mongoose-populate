@@ -4,28 +4,27 @@
   "description": "Populate helper for Mongoose",
   "main": "dist/index.js",
   "scripts": {
-    "test": "jest --coverage",
-    "build": "babel src --out-dir dist",
-    "lint": "eslint src test"
+    "test": "jest",
+    "build": "tsc",
+    "format": "prettier \"src/**/*.ts\"",
+    "lint": "eslint --ext .ts \"src/**/*.ts\""
   },
-  "repository": "gitlab:dacioromero/mongoose-populate",
+  "repository": "https://github.com/dacioromero/mongoose-populate",
   "author": "Dacio Romero <dacioromero@gmail.com> (dacio.dev)",
   "license": "MIT",
-  "bugs": {
-    "url": "https://gitlab.com/dacioromero/mongoose-populate/issues"
-  },
-  "homepage": "https://gitlab.com/dacioromero/mongoose-populate#readme",
   "devDependencies": {
-    "@babel/core": "^7.4.0",
-    "@babel/preset-env": "^7.4.2",
-    "@babel/register": "^7.4.0",
-    "babel-plugin-add-module-exports": "^1.0.0",
-    "eslint": "^5.16.0",
-    "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.16.0",
-    "jest": "^24.5.0"
+    "@types/jest": "^25.1.4",
+    "@types/mongoose": "^5.7.3",
+    "@typescript-eslint/eslint-plugin": "^2.22.0",
+    "@typescript-eslint/parser": "^2.22.0",
+    "eslint": "^6.8.0",
+    "jest": "^25.1.0",
+    "prettier": "^1.19.1",
+    "ts-jest": "^25.2.1",
+    "typescript": "^3.8.3"
   },
   "files": [
-    "dist/"
+    "src",
+    "dist"
   ]
 }

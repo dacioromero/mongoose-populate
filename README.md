@@ -1,55 +1,44 @@
 # Mongoose Populate
 
-[![pipeline status](https://gitlab.com/dacio/mongoose-populate/badges/master/pipeline.svg)](https://gitlab.com/dacio/mongoose-populate/commits/master)
-[![coverage report](https://gitlab.com/dacio/mongoose-populate/badges/master/coverage.svg)](https://gitlab.com/dacio/mongoose-populate/commits/master)
+Mini population hook for Mongoose so you don't need to keep rewriting `this.populate` and `next`.
+
+## Installation
+
+    $ npm install mongoose-populate
 
 
-Populate helper for Mongoose so you don't need to keep rewriting `this.populate` and `next`.
-
-# Installation
-
-```sh
-$ npm install mongoose-populate
-```
-
-# Usage
-
-## Importing
-
-### CommonJS
+## CommonJS
 
 ```js
-const populate = require('mongoose-populate');
+const { Schema } = require('mongoose')
+const { createPopulateHook } = require('mongoose-populate')
 ```
 
-### ES6
+## ESM
 
 ```js
-import populate from 'mongoose-populate';
+import { Schema } from 'mongoose'
+import { createPopulateHook } from 'mongoose-populate'
 ```
 
-## Example
-
-### Model
+## Schema
 
 ```js
-const { Schema } = mongoose;
-
 const ExampleSchema = new Schema({
-    exampleField: {
+    example: {
         type: Schema.Types.ObjectId,
         ref: 'OtherModel',
     },
-});
+})
 ```
 
-### Hook replacement
+## Hook replacement
 
 ```diff
-- ExampleSchema.pre('find', function popExampleField(next) {
--   this.populate('exampleField');
+- ExampleSchema.pre('find', function populateExampleHook(next) {
+-   this.populate('example');
 -   next();
 - });
 
-+ ExampleSchema.pre('find', populate('exampleField'));
++ ExampleSchema.pre('find', createPopulateHook('example'));
 ```
