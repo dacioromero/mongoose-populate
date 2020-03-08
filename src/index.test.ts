@@ -1,7 +1,7 @@
 import { createPopulateHook } from '.';
 
 // https://github.com/vikpe/mongoose-middleware-test
-describe('Helper', () => {
+describe('populate hook', () => {
   it('should call this.populate and next', () => {
     const query = { populate: jest.fn() };
 
