@@ -1,17 +1,75 @@
 {
   "name": "mongoose-populate",
   "version": "3.0.2",
-  "description": "Populate helper for Mongoose",
-  "main": "dist/index.js",
-  "scripts": {
-    "test": "jest",
-    "build": "tsc",
-    "format": "prettier \"src/**/*.ts\"",
-    "lint": "eslint --ext .ts \"src/**/*.ts\""
-  },
-  "repository": "https://github.com/dacioromero/mongoose-populate",
-  "author": "Dacio Romero <dacioromero@gmail.com> (dacio.dev)",
+  "description": "Mini population hook for Mongoose so you don't need to keep rewriting this.populate and next.",
+  "repository": "dacioromero/mongoose-populate",
+  "homepage": "https://github.com/dacioromero/mongoose-populate#readme",
+  "bugs": "https://github.com/dacioromero/mongoose-populate/issues",
   "license": "MIT",
+  "author": "Dacio Romero <dacioromero@gmail.com> (dacio.dev)",
+  "main": "dist/index.js",
+  "files": [
+    "src",
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged && jest"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.ts": [
+      "eslint --cache --fix",
+      "prettier --write"
+    ]
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  },
+  "eslintConfig": {
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+      "@typescript-eslint",
+      "import"
+    ],
+    "extends": [
+      "plugin:@typescript-eslint/recommended",
+      "plugin:import/errors",
+      "plugin:import/warnings",
+      "plugin:import/typescript"
+    ],
+    "rules": {
+      "@typescript-eslint/member-delimiter-style": [
+        "error",
+        {
+          "multiline": {
+            "delimiter": "none"
+          },
+          "singleline": {
+            "delimiter": "semi"
+          }
+        }
+      ],
+      "import/order": [
+        "warn",
+        {
+          "newlines-between": "always",
+          "alphabetize": {
+            "order": "asc"
+          }
+        }
+      ]
+    }
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node"
+  },
   "dependencies": {
     "@types/mongoose": "^5.7.3"
   },
@@ -20,13 +78,12 @@
     "@typescript-eslint/eslint-plugin": "^2.22.0",
     "@typescript-eslint/parser": "^2.22.0",
     "eslint": "^6.8.0",
+    "eslint-plugin-import": "^2.20.1",
+    "husky": "^4.2.3",
     "jest": "^25.1.0",
+    "lint-staged": "^10.0.8",
     "prettier": "^1.19.1",
     "ts-jest": "^25.2.1",
     "typescript": "^3.8.3"
-  },
-  "files": [
-    "src",
-    "dist"
-  ]
+  }
 }
