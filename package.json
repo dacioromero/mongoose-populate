@@ -2,9 +2,9 @@
   "name": "mongoose-populate",
   "version": "3.0.2",
   "description": "Mini population hook for Mongoose so you don't need to keep rewriting this.populate and next.",
-  "repository": "dacioromero/mongoose-populate",
   "homepage": "https://github.com/dacioromero/mongoose-populate#readme",
   "bugs": "https://github.com/dacioromero/mongoose-populate/issues",
+  "repository": "dacioromero/mongoose-populate",
   "license": "MIT",
   "author": "Dacio Romero <dacioromero@gmail.com> (dacio.dev)",
   "main": "dist/index.js",
@@ -27,45 +27,14 @@
       "prettier --write"
     ]
   },
-  "prettier": {
-    "semi": false,
-    "singleQuote": true
-  },
+  "prettier": "@dacio/prettier-config",
   "eslintConfig": {
-    "parser": "@typescript-eslint/parser",
-    "plugins": [
-      "@typescript-eslint",
-      "import"
-    ],
-    "extends": [
-      "plugin:@typescript-eslint/recommended",
-      "plugin:import/errors",
-      "plugin:import/warnings",
-      "plugin:import/typescript"
-    ],
-    "rules": {
-      "@typescript-eslint/member-delimiter-style": [
-        "error",
-        {
-          "multiline": {
-            "delimiter": "none"
-          },
-          "singleline": {
-            "delimiter": "semi"
-          }
-        }
-      ],
-      "import/order": [
-        "warn",
-        {
-          "newlines-between": "always",
-          "alphabetize": {
-            "order": "asc"
-          }
-        }
-      ]
-    }
+    "extends": "@dacio"
   },
+  "eslintIgnore": [
+    "node_modules/",
+    "dist/"
+  ],
   "jest": {
     "preset": "ts-jest",
     "testEnvironment": "node"
@@ -74,11 +43,10 @@
     "@types/mongoose": "^5.7.3"
   },
   "devDependencies": {
+    "@dacio/eslint-config": "^0.1.0",
+    "@dacio/prettier-config": "^0.1.0",
     "@types/jest": "^25.1.4",
-    "@typescript-eslint/eslint-plugin": "^2.22.0",
-    "@typescript-eslint/parser": "^2.22.0",
     "eslint": "^6.8.0",
-    "eslint-plugin-import": "^2.20.1",
     "husky": "^4.2.3",
     "jest": "^25.1.0",
     "lint-staged": "^10.0.8",
