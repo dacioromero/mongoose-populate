@@ -177,10 +177,10 @@
     eslint-plugin-react "^7.19.0"
     eslint-plugin-react-hooks "^2.5.0"
 
-"@dacio/prettier-config@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@dacio/prettier-config/-/prettier-config-0.1.0.tgz#1ab2c45cd5dae0da3f86aace7df1d1bbdbdb6cbe"
-  integrity sha512-J0eez1f/qvyVHRK/VHdYwA8VrGSXDB/z016bUqoOeh1rxFcEa6edOSOeu71qyiI8XMmod/dJPWdA73R4IgZ1ew==
+"@dacio/prettier-config@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@dacio/prettier-config/-/prettier-config-0.2.0.tgz#ce873009abca093f6bd1c263957630befea4d2e3"
+  integrity sha512-L9FTSNNzwVNr0T0tjbk7yYOMQavxownJa+FqMnSHcbjpiUrjFZ7jhM/pDSHs+riJGgytJmvZEyWcj9XfLyTRqw==
 
 "@istanbuljs/load-nyc-config@^1.0.0":
   version "1.0.0"
