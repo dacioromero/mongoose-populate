@@ -166,10 +166,10 @@
     exec-sh "^0.3.2"
     minimist "^1.2.0"
 
-"@dacio/eslint-config@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@dacio/eslint-config/-/eslint-config-0.1.0.tgz#0463fda1d945063fedce80d82c2b6952dec03090"
-  integrity sha512-YLrOajp0pNJ0cSAvdhEU2r050G4mDeRQYT1wcfr0FMZ7vTbteqPgPUrdjofLPM+AG+pIFtEfw+mwE/ccQjJjGA==
+"@dacio/eslint-config@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@dacio/eslint-config/-/eslint-config-0.2.0.tgz#9654e10f9b0581de6cfdb7a56aed4fd552bbc532"
+  integrity sha512-c0IgcAOmbnLJJkQKdRTXdx9a9Pz4XjCjjAef7/Kx/l+TSPGKpODiMVqcNEXfMaUHs1zrJ7izxtokaJEvbyXXEw==
   dependencies:
     "@typescript-eslint/eslint-plugin" "^2.22.0"
     "@typescript-eslint/parser" "^2.22.0"
