@@ -1,3 +1,4 @@
+/* eslint-disable import/no-unused-modules */
 import { createPopulateHook } from '.'
 
 // https://github.com/vikpe/mongoose-middleware-test
@@ -8,7 +9,7 @@ describe('populate hook', () => {
     const field = 'test'
     const next = jest.fn()
 
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/no-floating-promises
     createPopulateHook(field).call(query as any, next, [])
 
     expect(query.populate.mock.calls.length).toBe(1)

@@ -22,14 +22,15 @@
     }
   },
   "lint-staged": {
-    "src/**/*.ts": [
-      "eslint --cache --fix",
-      "prettier --write"
-    ]
+    "*.ts": "eslint --cache --fix",
+    "*.{md,json}": "prettier --write"
   },
   "prettier": "@dacio/prettier-config",
   "eslintConfig": {
-    "extends": "@dacio"
+    "extends": "@dacio/eslint-config-typescript",
+    "parserOptions": {
+      "project": "./tsconfig.json"
+    }
   },
   "eslintIgnore": [
     "node_modules/",
@@ -43,10 +44,16 @@
     "@types/mongoose": "^5.7.3"
   },
   "devDependencies": {
-    "@dacio/eslint-config": "^0.1.0",
-    "@dacio/prettier-config": "^0.1.0",
+    "@dacio/eslint-config": "^0.2.4",
+    "@dacio/eslint-config-typescript": "^0.2.5",
+    "@dacio/prettier-config": "^0.2.5",
     "@types/jest": "^25.1.4",
+    "@typescript-eslint/eslint-plugin": "^2.23.0",
+    "@typescript-eslint/parser": "^2.23.0",
     "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-prettier": "^3.1.2",
     "husky": "^4.2.3",
     "jest": "^25.1.0",
     "lint-staged": "^10.0.8",
