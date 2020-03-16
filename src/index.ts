@@ -7,6 +7,7 @@ export function createPopulateHook<T extends Query<unknown>>(
   field: string
 ): HookSyncCallback<T> {
   return function populateHook(this: T, next: HookNextFunction): void {
+    // eslint-disable-next-line @typescript-eslint/no-floating-promises
     this.populate(field)
     next()
   }

@@ -8,10 +8,7 @@
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "lib": [],
-    "types": [
-      "mongoose",
-      "jest"
-    ],
+    "types": ["mongoose", "jest"],
     "jsx": "react",
     "noFallthroughCasesInSwitch": true,
     "noImplicitAny": true,
@@ -20,8 +17,5 @@
     "declaration": true,
     "sourceMap": true,
     "declarationMap": true
-  },
-  "files": [
-    "src/index.ts"
-  ]
+  }
 }
