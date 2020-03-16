@@ -18,8 +18,14 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged && jest"
+      "pre-commit": "lint-staged && jest",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
   },
   "lint-staged": {
     "*.ts": "eslint --cache --fix",
@@ -27,10 +33,10 @@
   },
   "prettier": "@dacio/prettier-config",
   "eslintConfig": {
-    "extends": "@dacio/eslint-config-typescript",
     "parserOptions": {
       "project": "./tsconfig.json"
-    }
+    },
+    "extends": "@dacio/eslint-config-typescript"
   },
   "eslintIgnore": [
     "node_modules/",
@@ -40,10 +46,15 @@
     "preset": "ts-jest",
     "testEnvironment": "node"
   },
+  "resolutions": {
+    "**/mkdirp/minimist": "^0.2.1"
+  },
   "dependencies": {
     "@types/mongoose": "^5.7.3"
   },
   "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
     "@dacio/eslint-config": "^0.2.4",
     "@dacio/eslint-config-typescript": "^0.2.5",
     "@dacio/prettier-config": "^0.2.5",
@@ -60,8 +71,5 @@
     "prettier": "^1.19.1",
     "ts-jest": "^25.2.1",
     "typescript": "^3.8.3"
-  },
-  "resolutions": {
-    "**/mkdirp/minimist": "^0.2.1"
   }
 }
