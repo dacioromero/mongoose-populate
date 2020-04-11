@@ -59,7 +59,7 @@
     "@dacio/eslint-config-typescript": "^0.2.5",
     "@dacio/prettier-config": "^0.2.5",
     "@types/jest": "^25.1.4",
-    "@typescript-eslint/eslint-plugin": "^2.23.0",
+    "@typescript-eslint/eslint-plugin": "^2.27.0",
     "@typescript-eslint/parser": "^2.23.0",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.10.0",
