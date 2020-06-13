@@ -50,7 +50,7 @@
     "**/mkdirp/minimist": "^0.2.1"
   },
   "dependencies": {
-    "@types/mongoose": "^5.7.6"
+    "@types/mongoose": "^5.7.24"
   },
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
