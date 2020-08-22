@@ -54,7 +54,7 @@
   },
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
-    "@commitlint/config-conventional": "^8.3.4",
+    "@commitlint/config-conventional": "^9.1.2",
     "@dacio/eslint-config": "^0.2.4",
     "@dacio/eslint-config-typescript": "^0.2.5",
     "@dacio/prettier-config": "^0.2.5",
