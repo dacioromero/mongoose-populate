@@ -288,17 +288,17 @@
   dependencies:
     find-up "^4.0.0"
 
-"@dacio/eslint-config-typescript@^0.2.5":
-  version "0.2.5"
-  resolved "https://registry.yarnpkg.com/@dacio/eslint-config-typescript/-/eslint-config-typescript-0.2.5.tgz#7bd923c7a3078f5cac87a85a6fc4f0cd9294f823"
-  integrity sha512-NKSTNtZqigg7ST6R4KSCP28J12g8YO8JVnd7D5tDcIg2LX85cVrn8RVW60ZY7PF0M+tTaqt1SzalDNLpRBLrHw==
+"@dacio/eslint-config-typescript@^0.2.12":
+  version "0.2.12"
+  resolved "https://registry.yarnpkg.com/@dacio/eslint-config-typescript/-/eslint-config-typescript-0.2.12.tgz#251838974cee40ff3a186ea7844d6d9f4c320954"
+  integrity sha512-3KoYo/GFEnFBJm7on2OZKNZLdpaLiXDZtef9Fe5inaBwGP4j6R/wuY/L83vE7BMILEDVMEkH3J3vC9gy6cTozA==
   dependencies:
-    "@dacio/eslint-config" "^0.2.5"
+    "@dacio/eslint-config" "^0.2.12"
 
-"@dacio/eslint-config@^0.2.4", "@dacio/eslint-config@^0.2.5":
-  version "0.2.5"
-  resolved "https://registry.yarnpkg.com/@dacio/eslint-config/-/eslint-config-0.2.5.tgz#40e46c73bc1d97aa0651606efa0591b930bdb67a"
-  integrity sha512-XtVNvpMfZPx/TTJ7YKWhshJqRtfanRsusLfbfZjLUQTeG03+8HBO4vJu3GbD3Wr1SXUbWPJ/zATCG46gTQ5bag==
+"@dacio/eslint-config@^0.2.12", "@dacio/eslint-config@^0.2.4":
+  version "0.2.12"
+  resolved "https://registry.yarnpkg.com/@dacio/eslint-config/-/eslint-config-0.2.12.tgz#8c3e39fd6b723ef21752af14bd2373d2627511b5"
+  integrity sha512-Z0CNaGTLmhqyairbgTUirrcTVLfSwdTFUeyBPU0unk9IgBi290+A79NaQupjChpXlEoL8kWrhaMB3GLYg7HdWQ==
 
 "@dacio/prettier-config@^0.2.5":
   version "0.2.5"
