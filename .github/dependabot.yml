@@ -4,9 +4,5 @@ updates:
   directory: "/"
   schedule:
     interval: weekly
-    day: saturday
-    time: "12:00"
-    timezone: Asia/Manila
-  open-pull-requests-limit: 10
   commit-message:
     prefix: chore
