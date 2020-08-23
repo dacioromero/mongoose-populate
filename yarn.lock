@@ -431,6 +431,11 @@
   resolved "https://registry.yarnpkg.com/@dacio/prettier-config/-/prettier-config-0.3.0.tgz#b938e752cad02f5591ce8e708af147f8ae46baf4"
   integrity sha512-hUXQANR7bdnjYuZEAZM0CuMhrp5xfNxWyW55Jc/j7sQ0T8V6x0tNk+WV5Ue12PqQ7SB3SF8CRdhrEz9cQQ2I5w==
 
+"@dacio/tsconfig@^0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@dacio/tsconfig/-/tsconfig-0.3.0.tgz#f79c4139885d26c4d4b95116525f7032d62a3761"
+  integrity sha512-Nzl8xwO0rCzRIPLieCOd5olXUHKIwACWGEx0joBgCL/AAU8nmMWGq729/Wif5z3sYtYXwOlXpPrtE7yNd4iEBw==
+
 "@istanbuljs/load-nyc-config@^1.0.0":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@istanbuljs/load-nyc-config/-/load-nyc-config-1.1.0.tgz#fd3db1d59ecf7cf121e80650bb86712f9b55eced"

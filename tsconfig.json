@@ -1,21 +1,9 @@
 {
+  "extends": "@dacio/tsconfig",
   "compilerOptions": {
-    "outDir": "dist",
     "module": "commonjs",
     "target": "es2019",
-    "strict": true,
-    "alwaysStrict": true,
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
     "lib": [],
-    "types": ["mongoose", "jest"],
-    "jsx": "react",
-    "noFallthroughCasesInSwitch": true,
-    "noImplicitAny": true,
-    "noImplicitReturns": true,
-    "noImplicitThis": true,
-    "declaration": true,
-    "sourceMap": true,
-    "declarationMap": true
+    "types": ["mongoose", "jest"]
   }
 }
