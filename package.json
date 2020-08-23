@@ -1,6 +1,6 @@
 {
   "name": "mongoose-populate",
-  "version": "3.0.2",
+  "version": "3.0.3",
   "description": "Mini population hook for Mongoose so you don't need to keep rewriting this.populate and next.",
   "homepage": "https://github.com/dacioromero/mongoose-populate#readme",
   "bugs": "https://github.com/dacioromero/mongoose-populate/issues",
